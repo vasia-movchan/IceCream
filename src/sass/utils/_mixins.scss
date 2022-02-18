@@ -15,3 +15,22 @@
     @content;
   }
 }
+
+@mixin animationBottom {
+  animation-name: slideFromBottom;
+  @extend %animationSetup;
+}
+
+@mixin animationLeft {
+  animation-name: slideFromLeft;
+  @extend %animationSetup;
+}
+
+@mixin animationRight {
+  animation-name: slideFromRight;
+  @extend %animationSetup;
+}
+
+@mixin buttonHover {
+  transition: background-color 250ms var(--cubic);
+}
