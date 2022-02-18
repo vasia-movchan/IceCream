@@ -18,18 +18,15 @@
 
 @mixin animationBottom {
   animation-name: slideFromBottom;
-  animation-duration: 300ms;
-  animation-timing-function: var(--cubic);
+  @extend %animationSetup;
 }
 
 @mixin animationLeft {
   animation-name: slideFromLeft;
-  animation-duration: 300ms;
-  animation-timing-function: var(--cubic);
+  @extend %animationSetup;
 }
 
 @mixin animationRight {
   animation-name: slideFromRight;
-  animation-duration: 300ms;
-  animation-timing-function: var(--cubic);
+  @extend %animationSetup;
 }
