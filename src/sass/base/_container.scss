@@ -1,7 +1,4 @@
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
-
   margin-left: auto;
   margin-right: auto;
 
@@ -15,8 +12,6 @@
 
   @include tab {
     max-width: 768px;
-    padding-left: 34px;
-    padding-right: 34px;
   }
 
   @include desk {

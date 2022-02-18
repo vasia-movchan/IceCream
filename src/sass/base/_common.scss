@@ -1,35 +1,32 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-ul,
-ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
-  list-style: none;
+body {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: (30 / 16);
+  letter-spacing: 0.04em;
 }
 
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
-.z1 {
-  z-index: 1;
-}
 
-.z5 {
-  z-index: 5;
-}
-
-.z10 {
-  z-index: 10;
+.btn {
+  height: 44px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: none;
+  border-radius: 22px;
+  background-color: var(--white);
+  color: var(--accentColor);
+  cursor: pointer;
 }
