@@ -293,6 +293,11 @@
     display: block;
   }
 
+  @include desk {
+    right: 97px;
+    top: 156px;
+  }
+
   @include animationRight;
 }
 
