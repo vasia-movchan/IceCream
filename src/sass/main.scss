@@ -1,4 +1,15 @@
-@import './common';
+@import './base/common';
+@import './base/container';
+@import './base/reset';
+
+@import './components/animation';
+@import './components/btn';
+
+@import './utils/hidden';
 @import './utils/mixins';
 @import './utils/placeholders';
 @import './utils/vars';
+
+@import './layout/header';
+@import './layout/hero';
+
