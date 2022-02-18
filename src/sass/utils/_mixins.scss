@@ -30,3 +30,7 @@
   animation-name: slideFromRight;
   @extend %animationSetup;
 }
+
+@mixin buttonHover {
+  transition: background-color 250ms var(--cubic);
+}

@@ -84,6 +84,8 @@
   margin-right: 8px;
   font-family: var(--mainText);
 
+  @include buttonHover;
+
   @include desk {
     height: 40px;
     font-size: 14px;
@@ -94,6 +96,7 @@
     width: 62.4px;
     background-color: var(--accentColor);
     color: var(--white);
+
     @include desk {
       width: 104px;
     }
