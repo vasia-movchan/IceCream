@@ -1,0 +1,38 @@
+.roundBtn {
+  @extend %centered-flex-box;
+  display: block;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../images/hero/arrow-right-tb.png");
+  background-size: 18px 18px;
+  background-position: 50% 50%;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .box {
+      background-image: url("../images/hero/arrow-right-tb@2x.png");
+    }
+  }
+
+  @include desk {
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/hero/arrow-right-dt.png");
+    background-size: 26px 26px;
+
+    @media (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      .box {
+        background-image: url("../images/hero/arrow-right-dt@2x.png");
+      }
+    }
+  }
+}

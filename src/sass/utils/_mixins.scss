@@ -15,3 +15,21 @@
     @content;
   }
 }
+
+@mixin animationBottom {
+  animation-name: slideFromBottom;
+  animation-duration: 300ms;
+  animation-timing-function: var(--cubic);
+}
+
+@mixin animationLeft {
+  animation-name: slideFromLeft;
+  animation-duration: 300ms;
+  animation-timing-function: var(--cubic);
+}
+
+@mixin animationRight {
+  animation-name: slideFromRight;
+  animation-duration: 300ms;
+  animation-timing-function: var(--cubic);
+}
