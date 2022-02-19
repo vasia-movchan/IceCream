@@ -1,21 +1,93 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <section>
-      <div>
-        <label for=""></label>
-        <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
-      </div>
-    </section>
-  </body>
-</html>
+<section class="products">
+  <div class="container products-container">
+    <label class="products__title">100% natural</label>
+    <h2 class="products__subtitle">products</h2>
+    <ul class="list products__list">
+      <li class="products__item products__item--one">
+        <h3 class="card__title">ice cream</h3>
+        <p class="card__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button type="button" class="description-open" data-frst-open>
+          <svg class="icon arrow-right" width="12" height="12">
+            <use href="./images/sprite.svg#icon-arrow-right2"></use>
+          </svg>
+        </button>
+        <div class="description-menu is-hidden" data-frst>
+          <div class="container container-menu">
+            <div class="description-menu--top">
+              <button type="button" class="description-close" data-frst-close>
+                <svg class="icon description-icon" width="12" , height="12">
+                  <use href="./images/sprite.svg#icon-cross" class="description-icon__cross"></use>
+                </svg>
+              </button>
+              <p class="description__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam error et expedita
+                dolor, tempora inventore suscipit eaque incidunt minus corporis asperiores fugiat
+                amet iste dignissimos?
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="products__item products__item--two">
+        <h3 class="card__title">ice coffee</h3>
+        <p class="card__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button type="button" class="description-open" data-sec-open>
+          <svg class="icon arrow-right" width="12" height="12">
+            <use href="./images/sprite.svg#icon-arrow-right2"></use>
+          </svg>
+        </button>
+        <div class="description-menu is-hidden" data-sec>
+          <div class="container container-menu">
+            <div class="description-menu--top">
+              <button type="button" class="description-close" data-sec-close>
+                <svg class="icon description-icon" width="12" , height="12">
+                  <use href="./images/sprite.svg#icon-cross" class="description-icon__cross"></use>
+                </svg>
+              </button>
+              <p class="description__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam error et expedita
+                dolor, tempora inventore suscipit eaque incidunt minus corporis asperiores fugiat
+                amet iste dignissimos?
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="products__item products__item--three">
+        <h3 class="card__title">milkshakes</h3>
+        <p class="card__text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+          ut labore et. dolore magna aliqua facilisis.
+        </p>
+        <button type="button" class="description-open" data-description-open>
+          <svg class="icon arrow-right" width="12" height="12">
+            <use href="./images/sprite.svg#icon-arrow-right2"></use>
+          </svg>
+        </button>
+        <div class="description-menu is-hidden" data-description>
+          <div class="container container-menu">
+            <div class="description-menu--top">
+              <button type="button" class="description-close" data-description-close>
+                <svg class="icon description-icon" width="12" , height="12">
+                  <use href="./images/sprite.svg#icon-cross" class="description-icon__cross"></use>
+                </svg>
+              </button>
+              <p class="description__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam error et expedita
+                dolor, tempora inventore suscipit eaque incidunt minus corporis asperiores fugiat
+                amet iste dignissimos?
+              </p>
+            </div>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+<script src="./js/mobile-menu.js"></script>
