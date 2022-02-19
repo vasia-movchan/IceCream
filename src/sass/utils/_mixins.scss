@@ -34,3 +34,23 @@
 @mixin buttonHover {
   transition: background-color 250ms var(--cubic);
 }
+
+@mixin font($fs, $lh, $ta) {
+  font-size: $fs;
+  line-height: $lh;
+  text-align: $ta;
+}
+
+@mixin fonpic($br, $bs, $bp, $pst, $dsp, $zi) {
+  background-repeat: $br;
+  background-size: $bs;
+  background-position: $bp;
+  position: $pst;
+  display: $dsp;
+  z-index: $zi;
+}
+
+@mixin fonpicsz($wdth, $hgth) {
+  width: $wdth;
+  height: $hgth;
+}
