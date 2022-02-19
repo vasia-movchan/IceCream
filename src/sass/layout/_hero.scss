@@ -21,25 +21,15 @@
   }
 }
 
-.z1 {
-  z-index: 1;
-}
-
-.z5 {
-  z-index: 5;
-}
-
-.z10 {
-  z-index: 10;
-}
-
 .hero__container {
   padding-left: 20px;
   padding-right: 20px;
+  height: 100%;
 
   @include tab {
     padding-left: 34px;
     padding-right: 34px;
+    position: relative;
   }
 }
 
@@ -58,7 +48,7 @@
 
   @include tab {
     right: 137px;
-    top: 31px;
+    bottom: 46px;
     width: 324px;
     height: 322px;
   }
@@ -66,8 +56,8 @@
   @include desk {
     width: 538px;
     height: 538px;
-    top: 52px;
-    right: 267px;
+    bottom: 75px;
+    right: 227px;
   }
 
   @include animationBottom;
@@ -297,26 +287,27 @@
 .hero__sidebar {
   display: none;
 
-  position: absolute;
-  right: 34px;
-  top: 94px;
+  position: relative;
+  margin-left: auto;
 
   @include tab {
     display: block;
   }
 
   @include desk {
-    right: 97px;
-    top: 156px;
   }
 
   @include animationRight;
 }
 
+.content-div {
+  display: flex;
+}
+
 .hero__sidebarItem {
   margin-bottom: 13px;
   position: relative;
-  padding: 10px;
+  padding-right: 10px;
   padding-top: 0px;
 }
 
