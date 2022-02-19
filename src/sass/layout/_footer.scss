@@ -1,0 +1,71 @@
+.footer-container {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 113px;
+  background-color: var(--sectionBgColor);
+}
+.footer-container__homemade {
+  display: block;
+  font-family: var(--titleFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2;
+  text-transform: uppercase;
+
+  color: var(--contactThirdColor);
+
+  margin-bottom: 17px;
+}
+.footer-container__passion {
+  font-family: var(--titleFont);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 39px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--contactRedBtnColor);
+  margin-bottom: 43px;
+}
+.contacts {
+  display: flex;
+  justify-content: right;
+}
+.contacts__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+  color: var(--contactFirstColor);
+
+  padding-right: 3px;
+}
+
+.contacts__tel {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2;
+
+  text-align: right;
+
+  color: var(--contactRedBtnColor);
+}
+.copyright {
+  display: flex;
+  text-align: center;
+  padding-left: 64px;
+  padding-right: 64px;
+  padding-bottom: 25px;
+  padding-top: 22px;
+}
+.copyright p {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--contactSecondColor);
+}
