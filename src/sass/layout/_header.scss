@@ -39,9 +39,7 @@
   font-weight: 700;
   line-height: (21 / 16);
   color: #fff;
-  transition: color;
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: color 250ms var(--cubic);
   &:hover,
   &:focus {
     color: #d41443;
@@ -87,9 +85,7 @@
   width: 20px;
   height: 1px;
   background-color: #d41443;
-  transition: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 
 .burger-menu__icon {
@@ -119,6 +115,7 @@
     height: 44px;
     width: 160px;
     padding: 0 30px;
+    background-color: #fff;
     color: #d41443;
     border-radius: 22px;
     font-weight: 700;
@@ -145,6 +142,16 @@
   }
 }
 
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
 .mobile-menu {
   position: absolute;
   right: 0;
@@ -154,16 +161,20 @@
   background-color: #e17992;
   text-align: center;
   overflow-y: scroll;
+  z-index: 25;
+  transform: translateX(0);
+  transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
   @media screen and (min-width: 768px) {
     width: 254px;
   }
 }
 
-// .is-hidden {
-//   visibility: hidden;
-//   opacity: 0;
-//   pointer-events: none;
-// }
+.mobile-menu.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+}
 
 .mobile-menu__wrap {
   padding: 60px 20px 19px;
@@ -203,9 +214,7 @@
   width: 20px;
   height: 1px;
   background-color: #fff;
-  transition: background-color;
-  transition-duration: 250ms;
-  transition-timing-function: (0.4, 0, 0.2, 1);
+  transition: background-color 250ms var(--cubic);
 }
 
 .mobile-menu__close-icon {
@@ -221,10 +230,13 @@
   width: 100%;
   padding: 0 30px;
   color: #d41443;
+  background-color: #fff;
   border-radius: 22px;
   font-size: 16px;
   font-weight: 700;
   line-height: (21 / 16);
+
+  transition: background-color 250ms var(--cubic);
   &:hover {
     background-color: #ecebeb;
   }
@@ -257,6 +269,7 @@
   font-size: 14px;
   line-height: (18 / 14);
   color: #fff;
+  transition: color 250ms var(--cubic);
   &:hover {
     color: #d41443;
   }
