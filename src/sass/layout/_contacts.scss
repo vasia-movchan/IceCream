@@ -23,7 +23,6 @@
   margin-right: auto;
   width: 220px;
   padding: 43px 20px;
-  margin-bottom: 20px;
   font-size: 12px;
   line-height: calc(22 / 12);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -37,6 +36,10 @@
     font-size: 14px;
     line-height: calc(26 / 14);
   }
+}
+
+.contacts-list__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .contacts-list__category {
@@ -114,4 +117,60 @@
   @include tab {
     line-height: calc(26 / 14);
   }
+}
+
+.contacts__btn-wrap {
+  margin-top: 54px;
+}
+
+.contacts__btn {
+  @extend %centered-flex-box;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  width: 161px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(21 / 16);
+  color: var(--white);
+  background-color: var(--contactRedBtnColor);
+  border: none;
+  border-radius: 22px;
+  cursor: pointer;
+
+  &.contacts__btn--white {
+    color: var(--accentColor);
+    background-color: var(--white);
+
+    &:hover,
+    &:focus {
+      background-color: var(--whiteHover);
+    }
+  }
+}
+
+.contacts__btn-label {
+  @extend %centered-flex-box;
+  align-items: baseline;
+}
+
+.contacts__btn-label--white::after {
+  content: '';
+  width: 6px;
+  height: 10px;
+  margin-left: 8px;
+  background-image: url(../images/contacts/btnMarkWhite.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.contacts__btn-label--red::after {
+  content: '';
+  width: 7px;
+  height: 10px;
+  margin-left: 8px;
+  background-image: url(../images/contacts/btnMarkRed.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
