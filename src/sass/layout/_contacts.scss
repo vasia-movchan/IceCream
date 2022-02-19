@@ -299,3 +299,72 @@
     margin-left: 13px;
   }
 }
+
+// МОДАЛЬНОЕ ОКНО
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+  z-index: 10;
+  transition: opacity 250ms var(--cubic);
+}
+
+.backdrop.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+
+  .modal {
+    transform: translate(-50%, -50%) translateY(-40px);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 30px);
+  height: calc(100% - 30px);
+  max-width: 1920px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 7px;
+  overflow: hidden;
+  transition: transform 250ms var(--cubic);
+  transform: translate(-50%, -50%) translateY(0px);
+
+  @include tab {
+    width: calc(100% - 100px);
+  }
+}
+
+.contacts__map {
+  width: 100%;
+  height: 100%;
+}
+
+.modal__close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  z-index: 10;
+  padding: 0;
+  border-radius: 50%;
+  background-color: var(--mainBackground);
+  background-image: url(../images/contacts/btnCloseModal.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  transition: color 250ms var(--cubic);
+  cursor: pointer;
+}
