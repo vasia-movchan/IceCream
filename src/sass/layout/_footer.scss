@@ -1,11 +1,11 @@
 .footer {
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 113px;
   background-color: var(--sectionBgColor);
-  max-width: 1920px;
 }
-
+.footer-container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .footer-container__homemade {
   font-family: var(--titleFont);
   font-style: normal;
@@ -46,7 +46,7 @@
     width: 100%;
   }
 }
-.footer__contacts {
+.footer__tel {
   display: flex;
   justify-content: right;
 }
@@ -81,6 +81,49 @@
   @include desk {
     font-size: 16px;
   }
+}
+.footer-contacts .list {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 46px;
+
+  @include desk {
+    margin-bottom: 50px;
+  }
+}
+.footer-contacts__social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fea5bb;
+  @include tab {
+    width: 34px;
+    height: 34px;
+  }
+}
+.footer-contacts li:not(:last-child) {
+  margin-right: 28px;
+  @include tab {
+    margin-right: 30px;
+  }
+
+  @include desk {
+    margin-right: 24px;
+  }
+}
+.footer-contacts__icon {
+  width: 20px;
+
+  fill: #fff;
+}
+.footer-contacts__social-links:hover,
+.footer-contacts__social-links:focus {
+  background-color: var(--contactRedBtnColor);
+  transition: background-color, 250ms, --cubic;
 }
 .copyright {
   text-align: center;
