@@ -1,4 +1,4 @@
-.section-wrap {
+.about-section {
   background-color: var(--sectionBgColor);
   @media screen and (max-width: 767px) {
     padding: 125px 0 0 0;
@@ -7,10 +7,13 @@
     background-size: contain;
     background-position: 0 766px;
   }
-  @media screen and (min-device-pixel-ratio: 2),
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     background-image: url(../images/about/about-milk-mob2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 766px;
   }
   @media screen and(min-width:768px) {
     padding: 130px 36px 0 39px;
