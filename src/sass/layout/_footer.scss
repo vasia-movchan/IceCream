@@ -5,6 +5,7 @@
   background-color: var(--sectionBgColor);
   max-width: 1920px;
 }
+
 .footer-container__homemade {
   font-family: var(--titleFont);
   font-style: normal;
@@ -23,6 +24,7 @@
     font-size: 30px;
   }
 }
+
 .footer-container__passion {
   font-family: var(--titleFont);
   font-style: normal;
@@ -31,17 +33,20 @@
   line-height: 39px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  width: 162px;
 
   color: var(--contactRedBtnColor);
   margin-bottom: 43px;
   @include tab {
     font-size: 48px;
+    width: 100%;
   }
   @include desk {
     font-size: 58px;
+    width: 100%;
   }
 }
-.footer-contacts {
+.footer__contacts {
   display: flex;
   justify-content: right;
 }
