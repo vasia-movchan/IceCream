@@ -1,15 +1,15 @@
 .contacts {
   padding-top: 20px;
-  padding-bottom: 20px;
   margin: 0 auto;
-  // max-width: 1920px;
   background-image: linear-gradient(to bottom, var(--white) 104px, var(--sectionBgColor) 104px);
 
   @include tab {
+    padding-bottom: 45px;
     background-image: linear-gradient(to bottom, var(--white) 98px, var(--sectionBgColor) 98px);
   }
 
   @include desk {
+    padding-bottom: 52px;
     background-image: url('../images/contacts/contactsBg.png'),
       linear-gradient(to bottom, var(--white) 0px, var(--sectionBgColor) 0px);
     background-repeat: no-repeat;
