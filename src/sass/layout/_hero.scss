@@ -27,14 +27,21 @@
   height: 100%;
 
   @include tab {
+    padding-left: 34px;
+    padding-right: 34px;
+    position: relative;
+  }
+
+  @include desk {
     padding-left: 37px;
     padding-right: 57px;
-    position: relative;
   }
 }
 
 .hero__titleDiv {
-  padding-left: 75px;
+  @include desk {
+    padding-left: 38px;
+  }
 }
 
 .hero__bgCircle--icecream {
@@ -283,7 +290,7 @@
     right: 34px;
   }
   @include desk {
-    right: 109px;
+    right: 69px;
   }
   @include animationRight;
 }
