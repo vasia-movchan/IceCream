@@ -1,0 +1,96 @@
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 480px) {
+    min-width: 320px;
+  }
+
+  @include tel {
+    max-width: 480px;
+  }
+
+  @include tab {
+    max-width: 768px;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  @include desk {
+    max-width: 1200px;
+  }
+}
+
+.slider {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.slide {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  &__photo {
+    border-radius: 50%;
+    margin: 0 auto;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 29px;
+    }
+    @include tab {
+      margin-bottom: 19px;
+    }
+  }
+  &__photo img {
+    margin: 0 auto;
+  }
+
+  &__comment {
+    background-color: #fafafa;
+    margin-bottom: 30px;
+    padding: 43px 50px 20px 50px;
+
+    &--text {
+      &::before {
+        content: '';
+        position: absolute;
+        top: -25px;
+        left: -25px;
+        width: 54px;
+        height: 40px;
+        background-image: url(../images/customer-reviews/quotes.png);
+        z-index: -1;
+      }
+      position: relative;
+      z-index: 0;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 2.55;
+      background-repeat: no-repeat;
+      background-position: center bottom 1px;
+      background-size: 100% 1px;
+      background-image: linear-gradient(#e1e1e1, #e1e1e1);
+    }
+  }
+
+  &__name {
+    &::before {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 4px;
+      margin-top: 30px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 18px;
+      background-image: url(../images/customer-reviews/dots.png);
+    }
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.86;
+  }
+}
