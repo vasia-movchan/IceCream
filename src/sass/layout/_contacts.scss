@@ -18,7 +18,7 @@
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url('../images/contacts/contactsBg@2x.png'),
         linear-gradient(to bottom, var(--white) 0px, var(--sectionBgColor) 0px);
-      background-size: contain;
+      background-size: auto 382px;
     }
   }
 }
