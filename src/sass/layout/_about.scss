@@ -8,9 +8,9 @@
     background-position: 0 766px;
   }
   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
-    screen and (min-resolution: 192dpi),
-    screen and (min-resolution: 2dppx) {
-    background-image: url(../images/about/about-milk-mob2x.png);
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/about-milk-desk2x.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 766px;
@@ -18,17 +18,23 @@
   @media screen and(min-width:768px) {
     padding: 130px 36px 0 39px;
   }
-  @media screen and(min-width:1280px) {
+  @media screen and(min-width:1200px) {
+    padding: 125px 117px 0 112px;
+  }
+
+  @media screen and(min-width:1200px) {
     background-image: url(../images/about/about-milk-desk1x.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 0 342px;
-    padding: 125px 117px 0 112px;
   }
-  @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2),
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
     screen and (min-width: 1200px) and (min-resolution: 192dpi),
     screen and (min-width: 1200px) and (min-resolution: 2dppx) {
     background-image: url(../images/about/about-milk-desk2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 342px;
   }
 }
 
@@ -46,7 +52,7 @@
       line-height: 1.15;
       margin-bottom: 16px;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       font-size: 30px;
       line-height: 1.14;
       margin-bottom: 15px;
@@ -72,7 +78,7 @@
       line-height: 1.14;
       margin: 0 0 50px 0;
     }
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       font-size: 58px;
       line-height: 1.14;
       margin: 0 0 55px 0;
@@ -87,7 +93,7 @@
     justify-content: center;
     margin-bottom: 66px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 39px;
   }
 
@@ -102,7 +108,7 @@
     @media screen and(min-width:768px) {
       margin-right: 17px;
     }
-    @media screen and(min-width:1280px) {
+    @media screen and(min-width:1200px) {
       margin-right: 74px;
       max-width: 516px;
       max-height: 516px;
@@ -117,7 +123,7 @@
   @media screen and(min-width:768px) {
     width: 340px;
   }
-  @media screen and(min-width:1280px) {
+  @media screen and(min-width:1200px) {
     width: 463px;
   }
 
@@ -133,7 +139,7 @@
       font-size: 14px;
       line-height: 1.78;
     }
-    @media screen and(min-width:1280px) {
+    @media screen and(min-width:1200px) {
       font-size: 16px;
       line-height: 1.75;
     }
@@ -149,7 +155,7 @@
       font-size: 14px;
       line-height: 1.78;
     }
-    @media screen and(min-width:1280px) {
+    @media screen and(min-width:1200px) {
       font-size: 14px;
       line-height: 1.92;
     }
@@ -188,7 +194,7 @@
     line-height: 1.31;
     margin-top: 62px;
   }
-  @media screen and(min-width:1280px) {
+  @media screen and(min-width:1200px) {
     margin-top: 45px;
   }
 }
