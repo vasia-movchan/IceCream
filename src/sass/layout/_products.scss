@@ -12,12 +12,13 @@
   }
 
   @include desk {
-    padding-right: 112px;
-    padding-left: 112px;
+    padding-right: 77px;
+    padding-left: 77px;
   }
 }
 
 .products {
+  overflow: hidden;
   padding-top: 121px;
   padding-bottom: 98px;
 
