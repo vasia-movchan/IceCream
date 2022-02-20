@@ -1,16 +1,28 @@
+.container-cr {
+  overflow: hidden;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    padding: 0 15px;
+  }
+  @include tab {
+    width: 620px;
+  }
+  @include desk {
+    width: 926 px;
+  }
+}
+
 .slider {
   margin-top: 80px;
   width: 100%;
+  overflow: hidden;
 }
 
 .slide {
-  width: 100%;
-  display: inline-block;
   margin: 0 auto;
   text-align: center;
   &__photo {
-    border-radius: 50%;
-
     @media screen and (max-width: 767px) {
       margin-bottom: 29px;
     }
@@ -21,12 +33,28 @@
     & img {
       margin: 0 auto;
     }
+    & img {
+      border-radius: 50%;
+    }
   }
 
   &__comment {
+    display: inline-block;
     background-color: #fafafa;
     margin-bottom: 30px;
     padding: 43px 50px 20px 50px;
+    overflow-y: scroll;
+    @media screen and (max-width: 479px) {
+      height: 308px;
+    }
+    @include tab {
+      height: 382px;
+    }
+
+    @include desk {
+      width: 926px;
+      height: 350px;
+    }
 
     &--text {
       &::before {
