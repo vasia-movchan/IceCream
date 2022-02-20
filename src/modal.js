@@ -10,19 +10,21 @@
     modalBuynow: document.querySelector('[buynow-modal]'),
   };
 
+  refs.openModalBtn2.addEventListener('click', toggleModal2);
+  refs.closeModalBtn2.addEventListener('click', toggleModal2);
+
   refs.openModalBtn.addEventListener('click', toggleModal);
   refs.openModalBtn1.addEventListener('click', toggleModal);
   refs.closeModalBtn.addEventListener('click', toggleModal);
   
-   refs.openModalBtn2.addEventListener('click', toggleModal2);
-  refs.closeModalBtn2.addEventListener('click', toggleModal2);
+ 
 
   function toggleModal() {
     refs.modal.classList.toggle('is-hidden');
   }
 
     function toggleModal2() {
-    refs.modalBuynow.classList.toggle('is-hidden');
+    refs.modalBuynow.classList.toggle('is-hidden-buynow');
   }
 
 })();
