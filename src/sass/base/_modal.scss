@@ -9,7 +9,7 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 3000ms var(--cubic);
+  transition: opacity 250ms var(--cubic);
   z-index: 999;
   overflow-y: scroll;
 }
@@ -41,7 +41,7 @@
   justify-content: center;
   fill: var(--white);
 
-  transition: fill 3000ms var(--cubic);
+  transition: fill 250ms var(--cubic);
 
   &:hover,
   &:focus {
@@ -77,7 +77,7 @@
 
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  transition: transform 3000ms var(--cubic), opacity 3000ms var(--cubic);
+  transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
 
   .btn {
     padding: 10px 56px;
@@ -162,7 +162,7 @@
     left: 12px;
     display: inline-block;
 
-    transition: fill 3000ms var(--cubic);
+    transition: fill 250ms var(--cubic);
   }
 }
 
@@ -174,7 +174,7 @@
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition: border-color 3000ms var(--cubic);
+  transition: border-color 250ms var(--cubic);
 
   &:hover,
   &:focus {
