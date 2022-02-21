@@ -36,12 +36,18 @@
   }
 
   &__comment {
-    display: inline-block;
+    display: inline-flex;
     position: relative;
+    align-items: center;
+    background-color: #fafafa;
+    overflow-y: auto;
 
     &::before {
       content: '';
       position: absolute;
+      width: 54px;
+      height: 40px;
+      background-image: url(../images/customer-reviews/quotes.png);
       @media screen and (max-width: 767px) {
         top: 28px;
         left: 61px;
@@ -51,41 +57,49 @@
         left: 40px;
       }
 
-      width: 54px;
-      height: 40px;
-      background-image: url(../images/customer-reviews/quotes.png);
+      @include desk {
+        top: 32px;
+        left: 50px;
+      }
     }
 
-    background-color: #fafafa;
-    overflow-y: auto;
     @media screen and (max-width: 767px) {
       height: 308px;
-      padding: 43px 50px 20px 50px;
+      padding: 0 50px;
     }
     @include tab {
       height: 164px;
-      padding: 32px 50px;
+      padding-top: 30px;
+      padding-left: 62px;
+      padding-right: 36px;
+      justify-content: flex-start;
+      background-color: rgba(250, 250, 250, 0.4);
     }
 
     @include desk {
       height: 138px;
+      justify-content: center;
+      align-items: center;
     }
 
     &--text-wrap {
       @media screen and (max-width: 767px) {
-        padding: 0 11px;
       }
 
-      @include tel {
-        padding: 0 30px;
+      @include tab {
+        padding-right: 33px;
+      }
+
+      @include desk {
+        padding-right: 35px;
+        padding-left: 28px;
       }
 
       background: repeating-linear-gradient(
-        to top,
-        #e1e1e1,
+        #e1e1e1 0px,
         #e1e1e1 1px,
-        #fafafa 2px,
-        #fafafa 31px
+        transparent 1px,
+        transparent 30px
       );
     }
 
@@ -93,7 +107,7 @@
       position: relative;
       @media screen and (max-width: 767px) {
         font-size: 12px;
-        line-height: 2.55;
+        line-height: 2.5;
       }
       @include tab {
         font-size: 14px;
