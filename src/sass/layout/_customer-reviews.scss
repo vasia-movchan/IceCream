@@ -1,0 +1,162 @@
+.container-cr {
+  overflow: hidden;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    width: 320px;
+    padding: 0 15px;
+  }
+  @include tab {
+    width: 620px;
+  }
+  @include desk {
+    width: 926px;
+  }
+}
+
+.slider {
+  margin-top: 80px;
+}
+
+.slide {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  &__photo {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 29px;
+    }
+    @include tab {
+      margin-bottom: 19px;
+    }
+
+    & img {
+      margin: 0 auto;
+      border-radius: 50%;
+    }
+  }
+
+  &__comment {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    background-color: #fafafa;
+    overflow-y: auto;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 54px;
+      height: 40px;
+      background-image: url(../images/customer-reviews/quotes.png);
+      @media screen and (max-width: 767px) {
+        top: 28px;
+        left: 61px;
+      }
+      @include tab {
+        top: 30px;
+        left: 40px;
+      }
+
+      @include desk {
+        top: 32px;
+        left: 50px;
+      }
+    }
+
+    @media screen and (max-width: 767px) {
+      height: 308px;
+      padding: 0 50px;
+    }
+    @include tab {
+      height: 164px;
+      padding-top: 30px;
+      padding-left: 62px;
+      padding-right: 36px;
+      justify-content: flex-start;
+      background-color: rgba(250, 250, 250, 0.4);
+    }
+
+    @include desk {
+      height: 138px;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &--text-wrap {
+      @media screen and (max-width: 767px) {
+      }
+
+      @include tab {
+        padding-right: 33px;
+      }
+
+      @include desk {
+        padding-right: 35px;
+        padding-left: 28px;
+      }
+
+      background: repeating-linear-gradient(
+        #e1e1e1 0px,
+        #e1e1e1 1px,
+        transparent 1px,
+        transparent 30px
+      );
+    }
+
+    &--text {
+      position: relative;
+      @media screen and (max-width: 767px) {
+        font-size: 12px;
+        line-height: 2.5;
+      }
+      @include tab {
+        font-size: 14px;
+        line-height: 2.16;
+        letter-spacing: 0.04em;
+      }
+
+      @include desk {
+        font-size: 16px;
+        line-height: 1.86;
+      }
+    }
+  }
+
+  &__name {
+    &::before {
+      @media screen and (max-width: 767px) {
+        margin-top: 30px;
+      }
+      @include tel {
+        margin-top: 24px;
+      }
+
+      @include desk {
+        margin-top: 15px;
+      }
+      content: '';
+      display: block;
+      width: 32px;
+      height: 4px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 18px;
+      background-image: url(../images/customer-reviews/dots.png);
+    }
+
+    @media screen and (max-width: 767px) {
+      margin-bottom: 30px;
+      font-size: 14px;
+      line-height: 1.86;
+    }
+
+    @include tab {
+      margin-bottom: 26px;
+      font-size: 16px;
+    }
+
+    @include desk {
+      font-size: 20px;
+    }
+  }
+}
