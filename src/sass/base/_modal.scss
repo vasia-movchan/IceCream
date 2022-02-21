@@ -1,6 +1,6 @@
 /* Бэкдроп и Модалка */
 
-.backdrop {
+.backdrop-buynow {
   position: fixed;
   top: 0;
   left: 0;
@@ -10,11 +10,11 @@
 
   opacity: 1;
   transition: opacity 3000ms var(--cubic);
-  z-index: 10;
+  z-index: 999;
   overflow-y: scroll;
 }
 
-.backdrop.is-hidden {
+.backdrop-buynow.is-hidden-buynow {
   opacity: 0;
   pointer-events: none;
 
@@ -70,7 +70,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  background-image: url(../images/modal/sectionbg.png);
+  background-image: url(../images/modal/about-milk-desk2x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
