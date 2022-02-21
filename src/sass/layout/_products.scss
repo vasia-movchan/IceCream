@@ -298,6 +298,7 @@
   background-color: var(--white);
   border-radius: 50%;
   border: none;
+  cursor: pointer;
   @extend %centered-flex-box;
   @include buttonHover();
   &:hover,
@@ -369,6 +370,7 @@
   right: 120px;
   background-color: var(--white);
   stroke: var(--accentColor);
+  cursor: pointer;
   @extend %centered-flex-box;
   @include buttonHover();
   &:hover,
