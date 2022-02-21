@@ -1,24 +1,24 @@
 .contacts {
-  padding-top: 20px;
+  // padding-top: 20px;
   margin: 0 auto;
-  background-image: linear-gradient(to bottom, var(--white) 104px, var(--sectionBgColor) 104px);
+  background-image: linear-gradient(to bottom, var(--white) 84px, var(--sectionBgColor) 84px);
 
   @include tab {
-    padding-bottom: 45px;
-    background-image: linear-gradient(to bottom, var(--white) 98px, var(--sectionBgColor) 98px);
+    // padding-bottom: 45px;
+    background-image: linear-gradient(to bottom, var(--white) 78px, var(--sectionBgColor) 78px);
   }
 
   @include desk {
-    padding-bottom: 52px;
+    // padding-bottom: 52px;
     background-image: url('../images/contacts/contactsBg.png'),
       linear-gradient(to bottom, var(--white) 0px, var(--sectionBgColor) 0px);
     background-repeat: no-repeat;
-    background-position: 50% 122px;
+    background-position: 50% 132px;
 
     @media screen and (min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: url('../images/contacts/contactsBg@2x.png'),
         linear-gradient(to bottom, var(--white) 0px, var(--sectionBgColor) 0px);
-      background-size: auto 382px;
+      background-size: 1920px, auto;
     }
   }
 }
