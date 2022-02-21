@@ -11,21 +11,39 @@
 .footer-container {
   padding-left: 20px;
   padding-right: 20px;
+
   @include tab {
     display: flex;
     justify-content: space-between;
-
-    padding-left: 36px;
-    padding-right: 36px;
+    max-width: 700px;
+    padding-left: 0;
+    padding-right: 0;
     margin-bottom: 91px;
   }
+
   @include desk {
-    align-items: center;
-    padding-left: 115px;
-    padding-right: 115px;
+    max-width: 1050px;
     margin-bottom: 97px;
   }
 }
+// .footer-container {
+//   padding-left: 20px;
+//   padding-right: 20px;
+//   @include tab {
+//     display: flex;
+//     justify-content: space-between;
+
+//     padding-left: 36px;
+//     padding-right: 36px;
+//     margin-bottom: 91px;
+//   }
+//   @include desk {
+//     align-items: center;
+//     padding-left: 115px;
+//     padding-right: 115px;
+//     margin-bottom: 97px;
+//   }
+// }
 .footer-container__homemade {
   font-family: var(--titleFont);
   font-style: normal;
@@ -149,20 +167,26 @@
   background-color: var(--contactRedBtnColor);
   transition: background-color, 250ms, --cubic;
 }
+
 .copyright {
+  display: flex;
+  justify-content: center;
   text-align: center;
-  padding-left: 64px;
-  padding-right: 64px;
+
   padding-bottom: 25px;
   padding-top: 22px;
   background-color: var(--sectionBgColor);
   border-top: 1px solid #e1e1e1;
 }
 .copyright p {
+  width: 150px;
   font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
   text-align: center;
   color: var(--contactSecondColor);
+  @include tab {
+    width: 100%;
+  }
 }
