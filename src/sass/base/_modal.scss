@@ -96,24 +96,43 @@
 .products-to-choose {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     align-items: center;
   }
 }
-
+.modal-add-delete-btns {
+  display: flex;
+  margin-top: 5px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}
 .modal-delete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 35px;
   height: 35px;
   padding: 0;
+
+  margin-right: 10px;
+  // margin-left: 10px;
 
   background: var(--secondaryBackground);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: red;
+  fill: green;
+  cursor: pointer;
+  transition: fill, 250ms var(--cubic);
+  @media screen and (min-width: 768px) {
+    margin-left: 10px;
+  }
+}
+.modal-delete-btn:hover,
+.modal-delete-btn:focus {
+  fill: white;
 }
 
 .modal-add-btn {
@@ -128,7 +147,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: green;
+  fill: red;
+  cursor: pointer;
+  transition: fill, 250ms var(--cubic);
+}
+.modal-add-btn:hover,
+.modal-add-btn:focus {
+  fill: white;
 }
 
 .form {
@@ -216,14 +241,31 @@
 }
 
 .products-to-choose__label {
-  margin-right: 3px;
-  margin-left: 3px;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--accentColor);
   font-family: Titan One;
   text-transform: uppercase;
+  @media screen and (min-width: 768px) {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 5px;
+
+    margin-bottom: 0;
+  }
+}
+.products-to-choose__select {
+  @media screen and (min-width: 768px) {
+    margin-right: 15px;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 5px;
+    margin-bottom: 0;
+  }
 }
 
 .products-to-choose__item {
