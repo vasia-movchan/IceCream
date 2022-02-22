@@ -23,20 +23,10 @@
 }
 .about-modal {
   position: absolute;
+  padding: 40px;
 
   border-radius: 4px;
   background-color: var(--sectionBgColor);
-  background-image: url(../images/about/about-modal_bg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms;
-
-  padding: 40px;
-
   @media screen and (max-width: 479px) {
     width: 320px;
     height: 400px;
@@ -47,11 +37,49 @@
     width: 400px;
     height: 450px;
   }
+  @media screen and (max-width: 767px) {
+    background-image: url(../images/about/about-milk-mob1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 50%;
+  }
+  @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
+    screen and (max-width: 767px) and (min-resolution: 192dpi),
+    screen and (max-width: 767px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/about-milk-mob2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 50%;
+  }
+
+  @media screen and(min-width:768px) {
+    padding-left: 39px;
+    padding-right: 36px;
+  }
+
+  @media screen and(min-width:1200px) {
+    background-image: url(../images/about/about-milk-desk1x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 50%;
+  }
+  @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    screen and (min-width: 1200px) and (min-resolution: 192dpi),
+    screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+    background-image: url(../images/about/about-milk-desk2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 0 50%;
+  }
   @media screen and (min-width: 1200px) {
     overflow: auto;
     width: 528px;
     height: 581px;
   }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms;
 
   &_title {
     font-size: 14px;
