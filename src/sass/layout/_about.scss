@@ -23,7 +23,7 @@
   @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2),
     screen and (max-width: 767px) and (min-resolution: 192dpi),
     screen and (max-width: 767px) and (min-resolution: 2dppx) {
-    background-image: url(../images/about/about-milk-desk2x.png);
+    background-image: url(../images/about/about-milk-mob2x.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom 100px center;
@@ -58,6 +58,7 @@
     margin-bottom: 15px;
     font-size: 18px;
     line-height: 1.16;
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,21 +84,21 @@
 
     color: var(--accentColor);
 
-    margin: 0 0 26px 0;
-
     margin: 0 auto;
+    margin-bottom: 26px;
     @media screen and (max-width: 479px) {
       width: 90%;
     }
+
     @media screen and (min-width: 768px) {
       font-size: 48px;
       line-height: 1.14;
-      margin: 0 0 50px 0;
+      margin-bottom: 50px;
     }
     @media screen and (min-width: 1200px) {
       font-size: 58px;
       line-height: 1.14;
-      margin: 0 0 55px 0;
+      margin-bottom: 55px;
     }
   }
 }
@@ -105,34 +106,38 @@
 .about-box {
   @media screen and (min-width: 768px) {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
 .about-box_img {
   min-width: 280px;
 
+  @media screen and (max-width: 767px) {
+    margin-bottom: 46px;
+  }
   @media screen and (min-width: 768px) {
     width: 340px;
     flex-shrink: 0;
-    margin-right: 17px;
   }
 
   @media screen and (min-width: 1200px) {
     width: 516px;
-    margin-right: 74px;
   }
 }
 
 .about-box_text {
   padding: 0 30px;
+
   @media screen and (min-width: 768px) {
     padding: 0;
+    max-width: 340px;
   }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 45px;
+    max-width: 463px;
   }
   &_first {
     font-family: DM Sans;
@@ -158,7 +163,7 @@
     font-size: 12px;
     line-height: 1.58;
     color: var(--contactSecondColor);
-    margin-bottom: 17px;
+    margin-bottom: 19px;
     @media screen and (min-width: 768px) {
       font-size: 14px;
       line-height: 1.78;
