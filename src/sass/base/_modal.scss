@@ -279,13 +279,16 @@
   background-color: white;
 
   font-size: 10px;
+  padding-top: 9px;
 
   @media screen and (min-width: 480px) {
     font-size: 12px;
+    padding-top: 7px;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
+    padding-top: 5px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -296,7 +299,6 @@
   color: var(--contactSecondColor);
   font-weight: bold;
   text-align: center;
-  padding-top: 5px;
 }
 
 .amount-thumb {
@@ -307,13 +309,16 @@
   background-color: white;
 
   font-size: 10px;
+  padding-top: 9px;
 
   @media screen and (min-width: 480px) {
     font-size: 12px;
+    padding-top: 7px;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
+    padding-top: 5px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -324,7 +329,6 @@
   color: var(--contactSecondColor);
   font-weight: bold;
   text-align: center;
-  padding-top: 5px;
 }
 
 .modal-add-btn {
@@ -405,13 +409,16 @@
   background-color: white;
 
   font-size: 10px;
+  padding-top: 9px;
 
   @media screen and (min-width: 480px) {
     font-size: 12px;
+    padding-top: 7px;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
+    padding-top: 5px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -422,7 +429,6 @@
   color: var(--contactSecondColor);
   font-weight: bold;
   text-align: center;
-  padding-top: 5px;
 
   &:hover,
   &:focus {
