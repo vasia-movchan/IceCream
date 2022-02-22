@@ -92,7 +92,7 @@
   width: 80px;
   height: 16px;
   margin-bottom: 25px;
-  color: #ffffff;
+  color: var(--white);
   background-color: var(--contactCafeColor);
   border-radius: 4px;
 
@@ -154,7 +154,7 @@
 .contacts-list__line {
   margin-top: 25px;
   margin-bottom: 25px;
-  border-bottom: 1px solid #e1e1e1;
+  border-bottom: 1px solid var(--borderColor);
 
   @include tab {
     margin-top: 30px;
@@ -180,7 +180,7 @@
 }
 
 .contacts-list__time {
-  color: var(--contactThirdColor);
+  color: var(--secondaryBackground);
 }
 
 .contacts-list__tel,
@@ -331,7 +331,7 @@
   width: calc(100% - 30px);
   height: calc(100% - 30px);
   max-width: 1920px;
-  background-color: #ffffff;
+  background-color: var(--white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 7px;

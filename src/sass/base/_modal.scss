@@ -123,7 +123,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
-  fill: green;
+  fill: var(--modalColorCrossTwo);
   cursor: pointer;
   transition: fill, 250ms var(--cubic);
   @media screen and (min-width: 768px) {
@@ -132,7 +132,7 @@
 }
 .modal-delete-btn:hover,
 .modal-delete-btn:focus {
-  fill: white;
+  fill: var(--white);
 }
 
 .modal-add-btn {
@@ -147,13 +147,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: red;
+  fill: var(--modalColorCrossOne);
   cursor: pointer;
   transition: fill, 250ms var(--cubic);
 }
 .modal-add-btn:hover,
 .modal-add-btn:focus {
-  fill: white;
+  fill: var(--white);
 }
 
 .form {
