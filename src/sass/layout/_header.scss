@@ -104,7 +104,9 @@
     left: 0;
   }
 }
-
+.header-btns__btn {
+  transition: background-color 250ms var(--cubic);
+}
 .header-btns__btn {
   display: none;
   &:hover,
