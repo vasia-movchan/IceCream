@@ -23,6 +23,12 @@
 }
 .about-modal {
   position: absolute;
+  height: 100%;
+  border-radius: 4px;
+  background-color: var(--sectionBgColor);
+  background-image: url(../images/about/about-modal_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   padding: 40px;
 
   border-radius: 4px;
@@ -106,6 +112,8 @@
 
   &_close:hover {
     cursor: pointer;
+    fill: var(--modalColoCrossOne);
+
     background-color: var(--footerCntsColor);
   }
   &-title {
