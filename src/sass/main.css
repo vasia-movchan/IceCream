@@ -17,7 +17,6 @@
   --contactCafeFoodtruck: #c2e297;
   --contactFirstColor: #000000;
   --contactSecondColor: #907e82;
-  --contactThirdColor: #ffa5ba;
   --contactRedBtnColor: #d41342;
   --sliderColor: #fafafa;
   --footerCntsColor: #fea5bb;
@@ -426,22 +425,24 @@ p {
   border-radius: 4px;
   background-color: white;
   font-size: 10px;
+  padding-top: 9px;
   font-family: var(--mainFont);
   color: var(--contactSecondColor);
   font-weight: bold;
   text-align: center;
-  padding-top: 5px;
 }
 
 @media screen and (min-width: 480px) {
   .price-thumb {
     font-size: 12px;
+    padding-top: 7px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .price-thumb {
     font-size: 14px;
+    padding-top: 5px;
   }
 }
 
@@ -459,22 +460,24 @@ p {
   border-radius: 4px;
   background-color: white;
   font-size: 10px;
+  padding-top: 9px;
   font-family: var(--mainFont);
   color: var(--contactSecondColor);
   font-weight: bold;
   text-align: center;
-  padding-top: 5px;
 }
 
 @media screen and (min-width: 480px) {
   .amount-thumb {
     font-size: 12px;
+    padding-top: 7px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .amount-thumb {
     font-size: 14px;
+    padding-top: 5px;
   }
 }
 
@@ -575,22 +578,24 @@ p {
   border-radius: 4px;
   background-color: white;
   font-size: 10px;
+  padding-top: 9px;
   font-family: var(--mainFont);
   color: var(--contactSecondColor);
   font-weight: bold;
   text-align: center;
-  padding-top: 5px;
 }
 
 @media screen and (min-width: 480px) {
   .total-amount-thumb {
     font-size: 12px;
+    padding-top: 7px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .total-amount-thumb {
     font-size: 14px;
+    padding-top: 5px;
   }
 }
 
@@ -1624,7 +1629,7 @@ body.menu-open {
   text-align: center;
   text-transform: uppercase;
   color: var(--secondaryBackground);
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1648,14 +1653,14 @@ body.menu-open {
   text-align: center;
   text-transform: uppercase;
   color: var(--accentColor);
-  padding-bottom: 144px;
+  margin-bottom: 144px;
 }
 
 @media screen and (min-width: 768px) {
   .products__subtitle {
     font-size: 48px;
     line-height: 1.15;
-    padding-bottom: 150px;
+    margin-bottom: 150px;
   }
 }
 
@@ -1663,7 +1668,7 @@ body.menu-open {
   .products__subtitle {
     font-size: 58px;
     line-height: 1.14;
-    padding-bottom: 259px;
+    margin-bottom: 259px;
   }
 }
 
@@ -1697,11 +1702,13 @@ body.menu-open {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 161px 40px 41px;
 }
 
 @media screen and (min-width: 768px) {
   .products__item {
     margin-bottom: 0;
+    padding: 152px 11px 40px;
   }
   .products__item:not(:last-child) {
     margin-right: 20px;
@@ -1709,6 +1716,9 @@ body.menu-open {
 }
 
 @media screen and (min-width: 1200px) {
+  .products__item {
+    padding: 163px 45px 50px;
+  }
   .products__item:not(:last-child) {
     margin-right: 24px;
   }
@@ -1883,22 +1893,14 @@ body.menu-open {
   line-height: 1.15;
   text-align: center;
   text-transform: uppercase;
-  padding-top: 161px;
-  padding-bottom: 36px;
-}
-
-@media screen and (min-width: 768px) {
-  .card__title {
-    padding-top: 152px;
-  }
+  margin-bottom: 36px;
 }
 
 @media screen and (min-width: 1200px) {
   .card__title {
-    padding-top: 163px;
     font-size: 30px;
     line-height: 1.13;
-    padding-bottom: 38px;
+    margin-bottom: 38px;
   }
 }
 
@@ -1932,13 +1934,14 @@ body.menu-open {
   line-height: 1.7;
   text-align: center;
   color: var(--white);
-  padding: 30px 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 768px) {
   .card__text {
     line-height: 1.8;
-    padding: 30px 11px 40px;
+    margin-bottom: 40px;
   }
 }
 
@@ -1946,14 +1949,14 @@ body.menu-open {
   .card__text {
     font-size: 16px;
     line-height: 1.75;
-    padding: 32px 44px 62px;
+    margin-top: 32px;
+    margin-bottom: 62px;
   }
 }
 
 .description-open {
   width: 40px;
   height: 40px;
-  margin-bottom: 41px;
   fill: var(--accentColor);
   background-color: var(--white);
   border-radius: 50%;
@@ -1966,12 +1969,6 @@ body.menu-open {
 .description-open:hover, .description-open:focus {
   background-color: var(--accentColor);
   fill: var(--white);
-}
-
-@media screen and (min-width: 1200px) {
-  .description-open {
-    margin-bottom: 50px;
-  }
 }
 
 .arrow-right {
@@ -3522,6 +3519,12 @@ body.menu-open {
 
 .about-modal {
   position: absolute;
+  height: 100%;
+  border-radius: 4px;
+  background-color: var(--sectionBgColor);
+  background-image: url(../images/about/about-modal_bg.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   padding: 40px;
   border-radius: 4px;
   background-color: var(--sectionBgColor);
@@ -3631,6 +3634,7 @@ body.menu-open {
 
 .about-modal_close:hover {
   cursor: pointer;
+  fill: var(--modalColoCrossOne);
   background-color: var(--footerCntsColor);
 }
 
