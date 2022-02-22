@@ -37,7 +37,7 @@
   @include font(18px, 1.16, center);
   text-transform: uppercase;
   color: var(--secondaryBackground);
-  padding-bottom: 15px;
+  margin-bottom: 15px;
   @extend %centered-flex-box;
 
   @include tab {
@@ -54,16 +54,16 @@
   @include font(34px, 1.14, center);
   text-transform: uppercase;
   color: var(--accentColor);
-  padding-bottom: 144px;
+  margin-bottom: 144px;
 
   @include tab {
     @include font(48px, 1.15, null);
-    padding-bottom: 150px;
+    margin-bottom: 150px;
   }
 
   @include desk {
     @include font(58px, 1.14, null);
-    padding-bottom: 259px;
+    margin-bottom: 259px;
   }
 }
 
@@ -86,15 +86,18 @@
   color: var(--white);
   @extend %centered-flex-box;
   flex-direction: column;
+  padding: 161px 40px 41px;
 
   @include tab {
     margin-bottom: 0;
+    padding: 152px 11px 40px;
     &:not(:last-child) {
       margin-right: 20px;
     }
   }
 
   @include desk {
+    padding: 163px 45px 50px;
     &:not(:last-child) {
       margin-right: 24px;
     }
@@ -237,17 +240,18 @@
   font-weight: normal;
   @include font(20px, 1.15, center);
   text-transform: uppercase;
-  padding-top: 161px;
-  padding-bottom: 36px;
+  // padding-top: 161px;
+  margin-bottom: 36px;
 
-  @include tab {
-    padding-top: 152px;
-  }
+  // @include tab {
+  //   padding-top: 152px;
+  // }
 
   @include desk {
-    padding-top: 163px;
+    // padding-top: 163px;
     @include font(30px, 1.13, null);
-    padding-bottom: 38px;
+    // padding-bottom: 38px;
+    margin-bottom: 38px;
   }
 }
 
@@ -275,16 +279,22 @@
   font-weight: bold;
   @include font(14px, 1.7, center);
   color: var(--white);
-  padding: 30px 40px;
+  // padding-top: 30px;
+  // padding-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   @include tab {
     @include font(null, 1.8, null);
-    padding: 30px 11px 40px;
+    // padding: 30px 11px 40px;
+    margin-bottom: 40px;
   }
 
   @include desk {
     @include font(16px, 1.75, null);
-    padding: 32px 44px 62px;
+    // padding: 32px 44px 62px;
+    margin-top: 32px;
+    margin-bottom: 62px;
   }
 }
 
@@ -293,7 +303,7 @@
 .description-open {
   width: 40px;
   height: 40px;
-  margin-bottom: 41px;
+  // margin-bottom: 41px;
   fill: var(--accentColor);
   background-color: var(--white);
   border-radius: 50%;
@@ -307,9 +317,9 @@
     fill: var(--white);
   }
 
-  @include desk {
-    margin-bottom: 50px;
-  }
+  // @include desk {
+  //   margin-bottom: 50px;
+  // }
 }
 
 .arrow-right {
