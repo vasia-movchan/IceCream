@@ -38,6 +38,39 @@
   <script src="./products-descriptions.js"></script>
   <script src="./js/about-modal.js"></script>
   <script src="./modal.js"></script>
+
+  <!-- srol lock for modal -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      var left = 0,
+        top = 0;
+      $("#off").click(function () {
+        left = $(document).scrollLeft();
+        top = $(document).scrollTop();
+        $(document.body).css({
+          overflow: "hidden"
+        });
+
+        function stop_scroll(event) {
+          event.preventDefault();
+          $(document).scrollLeft(left);
+          $(document).scrollTop(top);
+        }
+        $(document).bind("mousewheel", stop_scroll);
+        $(window).bind("scroll mousewheel", stop_scroll);
+
+      });
+      $("#on").click(function () {
+        $(document).unbind('mousewheel');
+        $(window).unbind("scroll mousewheel");
+        $(document.body).css({
+          overflow: ""
+        });
+      });
+
+    });
+  </script>
   
 
 </body>
