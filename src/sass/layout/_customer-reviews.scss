@@ -39,7 +39,7 @@
     display: inline-flex;
     position: relative;
     align-items: center;
-    background-color: #fafafa;
+    background-color: var(--sliderColor);
     overflow-y: auto;
 
     &::before {

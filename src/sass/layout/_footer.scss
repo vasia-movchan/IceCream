@@ -28,6 +28,13 @@
   }
 }
 
+.footer-container__title {
+  margin-bottom: 43px;
+  @include tab {
+    margin-bottom: 0;
+  }
+}
+
 .footer-container__homemade {
   font-family: var(--titleFont);
   font-style: normal;
@@ -125,7 +132,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: #fea5bb;
+  background-color: var(--footerCntsColor);
   @include tab {
     width: 34px;
     height: 34px;
@@ -144,7 +151,7 @@
 .footer-contacts__icon {
   width: 20px;
 
-  fill: #fff;
+  fill: var(--white);
 }
 .footer-contacts__social-links:hover,
 .footer-contacts__social-links:focus {
@@ -160,7 +167,7 @@
   padding-bottom: 25px;
   padding-top: 22px;
   background-color: var(--sectionBgColor);
-  border-top: 1px solid #e1e1e1;
+  border-top: 1px solid var(--borderColor);
 }
 .copyright p {
   width: 150px;
