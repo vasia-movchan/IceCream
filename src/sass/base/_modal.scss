@@ -9,8 +9,8 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   opacity: 1;
-  transition: opacity 3000ms var(--cubic);
-  z-index: 10;
+  transition: opacity 250ms var(--cubic);
+  z-index: 20;
   overflow-y: scroll;
 }
 
@@ -31,22 +31,20 @@
   top: 8px;
   right: 8px;
   padding: 0;
+  color: var(--accentColor);
+  font-weight: 700;
 
-  background: var(--mainBackground);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: var(--white);
-
-  transition: fill 3000ms var(--cubic);
 
   &:hover,
   &:focus {
-    fill: var(--accentHover);
     cursor: pointer;
+    background-color: var(--whiteHover);
   }
 }
 
@@ -78,11 +76,29 @@
 
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
-  transition: transform 3000ms var(--cubic), opacity 3000ms var(--cubic);
+  transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+}
 
-  .btn {
-    padding: 10px 56px;
-    margin: auto;
+.btn-buynow {
+  margin: auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 160px;
+  padding: 0 30px;
+  background-color: var(--whiteElements);
+  color: var(--accentColor);
+  border-radius: 22px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+  line-height: (21 / 16);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--whiteHover);
   }
 }
 
@@ -119,7 +135,7 @@
     left: 12px;
     display: inline-block;
 
-    transition: fill 3000ms var(--cubic);
+    transition: fill 250ms var(--cubic);
   }
 }
 
@@ -131,7 +147,7 @@
   box-sizing: border-box;
   border-radius: 4px;
 
-  transition: border-color 3000ms var(--cubic);
+  transition: border-color 250ms var(--cubic);
 
   &:hover,
   &:focus {
@@ -154,21 +170,6 @@
   letter-spacing: 0.01em;
   color: var(--accentColor);
   text-transform: uppercase;
-}
-
-.form__field textarea {
-  padding: 12px 16px;
-  margin: 0;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  box-sizing: border-box;
-  border-radius: 4px;
-
-  &::placeholder {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-  }
 }
 
 // New corrections / //
@@ -219,6 +220,13 @@
 
   text-align: center;
   width: 100%;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accentHover);
+    cursor: pointer;
+    border-width: 3px;
+  }
 }
 
 .products-to-choose__group {
@@ -272,6 +280,11 @@
 
   color: green;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--whiteHover);
+  }
 }
 
 .modal-delete-btn {
@@ -284,8 +297,13 @@
   border: 3px solid rgba(0, 0, 0, 0.1);
   border-radius: 22px;
 
-  color: red;
+  color: var(--accentColor);
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: var(--whiteHover);
+  }
 }
 
 .btn-thumb {
@@ -327,6 +345,13 @@
   font-weight: bold;
   text-align: center;
   padding-top: 5px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accentHover);
+    cursor: pointer;
+    border-width: 3px;
+  }
 }
 
 .div-item-thumb1 {
@@ -338,6 +363,13 @@
 .div-item-thumb2 {
   width: calc((100% - 60px) * 0.15);
   margin-right: 15px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accentHover);
+    cursor: pointer;
+    border-width: 3px;
+  }
 }
 
 .div-item-thumb3 {
@@ -348,6 +380,13 @@
 .div-item-thumb4 {
   width: calc(100vw * 0.12);
   margin-right: 15px;
+
+  &:hover,
+  &:focus {
+    border-color: var(--accentHover);
+    cursor: pointer;
+    border-width: 3px;
+  }
 }
 
 .div-item-thumb5 {
