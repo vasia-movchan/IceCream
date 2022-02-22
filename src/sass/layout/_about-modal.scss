@@ -30,9 +30,11 @@
   background-repeat: no-repeat;
   background-size: contain;
   padding: 40px;
-
+  width: 90vw;
+  height: 70vh;
   border-radius: 4px;
   background-color: var(--sectionBgColor);
+
   @media screen and (max-width: 479px) {
     width: 320px;
     height: 400px;
@@ -44,6 +46,7 @@
     height: 450px;
   }
   @media screen and (max-width: 1199px) {
+
     background-image: url(../images/about/about-milk-mob1x.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -59,8 +62,9 @@
   }
 
   @media screen and(min-width:768px) {
-    padding-left: 39px;
-    padding-right: 36px;
+    width: 450px;
+    height: 600px;
+    padding: 40px;
   }
 
   @media screen and(min-width:1200px) {
@@ -85,13 +89,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms;
+  transition: transform 250ms var(--cubic);
 
   &_title {
+    //  font-family: Titan One;
     font-size: 14px;
     line-height: 1.3;
-    font-family: Titan One;
-    color: var(--contactSecondColor);
+
+    color: var(--contactFirstColor);
   }
 
   &_close {
