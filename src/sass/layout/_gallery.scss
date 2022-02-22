@@ -1,11 +1,4 @@
-.gallery-partial {
-  display: block;
-  min-height: 122px;
-  text-align: center;
-  align-items: center;
-
-  padding-top: 0;
-  padding-bottom: 80px;
+.gallery-section {
   margin: 0 auto;
   background-image: linear-gradient(to bottom, var(--sectionBgColor) 48px, var(--white) 48px);
 
@@ -18,20 +11,13 @@
   @include desk {
     padding-bottom: 123px;
     min-height: 430px;
-    background-image: linear-gradient(to bottom, var(--sectionBgColor) 171px, var(--white) 171px);
+    background-image: linear-gradient(to bottom, var(--sectionBgColor) 161px, var(--white) 161px);
   }
 }
 
-.gallery-partial__container {
-  @extend .container;
+.gallery-section__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.gallery-partial__img_basic {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-// .training {
-//   display: block;
-//   margin-top: 210px;
-// }

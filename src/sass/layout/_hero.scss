@@ -198,11 +198,13 @@
   @include tab {
     font-size: 22px;
     line-height: 25px;
+    margin-bottom: 20px;
   }
 
   @include desk {
     font-size: 38px;
     line-height: 44px;
+    margin-bottom: 25px;
   }
 
   &--secondary {

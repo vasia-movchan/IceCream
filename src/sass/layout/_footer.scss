@@ -28,6 +28,13 @@
   }
 }
 
+.footer-container__title {
+  margin-bottom: 43px;
+  @include tab {
+    margin-bottom: 0;
+  }
+}
+
 .footer-container__homemade {
   font-family: var(--titleFont);
   font-style: normal;
@@ -54,7 +61,7 @@
   font-style: normal;
   font-weight: 400;
   font-size: 34px;
-  line-height: 39px;
+  line-height: 1.15;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   width: 162px;
@@ -63,9 +70,11 @@
   // margin-bottom: 43px;
   @include tab {
     font-size: 48px;
+    line-height: 1.16;
   }
   @include desk {
     font-size: 58px;
+    line-height: 1.14;
     width: 100%;
   }
 }
