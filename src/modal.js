@@ -27,6 +27,7 @@
 
     function toggleModal2() {
     refs.modalBuynow.classList.toggle('is-hidden-buynow');
+    document.body.classList.toggle("modal-open");
   }
 
 })();
