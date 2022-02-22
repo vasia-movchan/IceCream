@@ -11,40 +11,23 @@
 .footer-container {
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 43px;
 
   @include tab {
     display: flex;
     justify-content: space-between;
-    max-width: 700px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 36px;
+    padding-right: 36px;
     margin-bottom: 91px;
   }
 
   @include desk {
-    max-width: 1050px;
+    padding-left: 74px;
+    padding-right: 74px;
     margin-bottom: 97px;
   }
 }
 
-// .footer-container {
-//   padding-left: 20px;
-//   padding-right: 20px;
-//   @include tab {
-//     display: flex;
-//     justify-content: space-between;
-
-//     padding-left: 36px;
-//     padding-right: 36px;
-//     margin-bottom: 91px;
-//   }
-//   @include desk {
-//     align-items: center;
-//     padding-left: 115px;
-//     padding-right: 115px;
-//     margin-bottom: 97px;
-//   }
-// }
 .footer-container__homemade {
   font-family: var(--titleFont);
   font-style: normal;
@@ -77,7 +60,7 @@
   width: 162px;
 
   color: var(--contactRedBtnColor);
-  margin-bottom: 43px;
+  // margin-bottom: 43px;
   @include tab {
     font-size: 48px;
   }
@@ -94,7 +77,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.86;
   color: var(--contactFirstColor);
 
   padding-right: 3px;
@@ -110,7 +93,7 @@
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.86;
 
   text-align: right;
 
@@ -122,9 +105,9 @@
     font-size: 16px;
   }
 }
-.footer-contacts {
-  margin-bottom: 43px;
-}
+// .footer-contacts {
+//   margin-bottom: 43px;
+// }
 .footer-contacts .list {
   display: flex;
   justify-content: right;

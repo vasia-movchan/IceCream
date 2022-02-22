@@ -39,11 +39,11 @@
 .header-nav__link {
   font-weight: 700;
   line-height: (21 / 16);
-  color: #fff;
+  color: var(--whiteElements);
   transition: color 250ms var(--cubic);
   &:hover,
   &:focus {
-    color: #d41443;
+    color: var(--accentColor);
   }
 }
 
@@ -62,12 +62,12 @@
   &:hover .burger-menu__icon,
   &:hover .burger-menu__icon::before,
   &:hover .burger-menu__icon::after {
-    background-color: #fff;
+    background-color: var(--whiteElements);
   }
   &:focus .burger-menu__icon,
   &:focus .burger-menu__icon::before,
   &:focus .burger-menu__icon::after {
-    background-color: #fff;
+    background-color: var(--whiteElements);
   }
 
   @media screen and (min-width: 768px) {
@@ -85,7 +85,7 @@
   position: absolute;
   width: 20px;
   height: 1px;
-  background-color: #d41443;
+  background-color: var(--accentColor);
   transition: background-color 250ms var(--cubic);
 }
 
@@ -109,15 +109,15 @@
   display: none;
   &:hover,
   &:focus {
-    background-color: #ecebeb;
+    background-color: var(--whiteHover);
   }
   @media screen and (min-width: 768px) {
     display: flex;
     height: 44px;
     width: 160px;
     padding: 0 30px;
-    background-color: #fff;
-    color: #d41443;
+    background-color: var(--whiteElements);
+    color: var(--accentColor);
     border-radius: 22px;
     font-weight: 700;
     line-height: (21 / 16);
@@ -153,7 +153,7 @@
 .backdrop.is-hidden .burger-menu__icon,
 .backdrop.is-hidden .burger-menu__icon::before,
 .backdrop.is-hidden .burger-menu__icon::after {
-  background-color: #d41443;
+  background-color: var(--accentColor);
 }
 
 .backdrop.is-hidden .mobile-menu {
@@ -170,7 +170,7 @@ body.menu-open {
   top: 0;
   width: 250px;
   height: 100vh;
-  background-color: #e17992;
+  background-color: var(--mobileMenu);
   text-align: center;
   overflow-y: scroll;
   z-index: 25;
@@ -202,11 +202,11 @@ body.menu-open {
   background-color: transparent;
   &:hover .mobile-menu__close-icon,
   &:hover .mobile-menu__close-icon:after {
-    background-color: #d41443;
+    background-color: var(--accentColor);
   }
   &:focus .mobile-menu__close-icon,
   &:focus .mobile-menu__close-icon:after {
-    background-color: #d41443;
+    background-color: var(--accentColor);
   }
   @media screen and (min-width: 768px) {
     right: 34px;
@@ -218,7 +218,7 @@ body.menu-open {
   position: absolute;
   width: 20px;
   height: 1px;
-  background-color: #fff;
+  background-color: var(--whiteElements);
   transition: background-color 250ms var(--cubic);
 }
 
@@ -234,8 +234,8 @@ body.menu-open {
   height: 44px;
   width: 100%;
   padding: 0 30px;
-  color: #d41443;
-  background-color: #fff;
+  color: var(--accentColor);
+  background-color: var(--whiteElements);
   border-radius: 22px;
   font-size: 16px;
   font-weight: 700;
@@ -243,7 +243,7 @@ body.menu-open {
 
   transition: background-color 250ms var(--cubic);
   &:hover {
-    background-color: #ecebeb;
+    background-color: var(--whiteHover);
   }
 }
 
@@ -259,10 +259,10 @@ body.menu-open {
   display: flex;
   align-items: center;
   padding: 0 20px;
-  border-top: 1px solid #e18298;
+  border-top: 1px solid var(--mobileMenuBorder);
   height: 42px;
   &:last-child {
-    border-bottom: 1px solid #e18298;
+    border-bottom: 1px solid var(--mobileMenuBorder);
   }
   @media screen and (min-width: 768px) {
     padding: 0 24px;
@@ -273,9 +273,9 @@ body.menu-open {
   font-weight: 700;
   font-size: 14px;
   line-height: (18 / 14);
-  color: #fff;
+  color: var(--whiteElements);
   transition: color 250ms var(--cubic);
   &:hover {
-    color: #d41443;
+    color: var(--accentColor);
   }
 }
