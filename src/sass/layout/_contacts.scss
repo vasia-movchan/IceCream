@@ -207,11 +207,14 @@
     margin-top: 81px;
     flex-direction: row;
   }
+
+  @include desk {
+    margin-top: 86px;
+  }
 }
 
 .contacts__btn {
   @extend %centered-flex-box;
-  margin-top: 10px;
   padding: 0;
   width: 161px;
   height: 44px;
