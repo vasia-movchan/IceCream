@@ -36,18 +36,14 @@
   }
 
   &__comment {
-    display: inline-flex;
+    width: 100%;
+    display: inline-block;
     position: relative;
-    align-items: center;
-    background-color: var(--sliderColor);
-    overflow-y: auto;
+    padding: 43px 50px 26px;
 
     &::before {
       content: '';
       position: absolute;
-      width: 54px;
-      height: 40px;
-      background-image: url(../images/customer-reviews/quotes.png);
       @media screen and (max-width: 767px) {
         top: 28px;
         left: 61px;
@@ -57,66 +53,63 @@
         left: 40px;
       }
 
-      @include desk {
-        top: 32px;
-        left: 50px;
-      }
+      width: 54px;
+      height: 40px;
+      background-image: url(../images/customer-reviews/quotes.png);
     }
 
+    background-color: #fafafa;
+    overflow-y: auto;
     @media screen and (max-width: 767px) {
-      height: 308px;
-      padding: 0 50px;
+      min-height: 308px;
     }
+
     @include tab {
-      height: 164px;
-      padding-top: 30px;
-      padding-left: 62px;
-      padding-right: 36px;
-      justify-content: flex-start;
-      background-color: rgba(250, 250, 250, 0.4);
+      padding: 47px 36px 34px 60px;
     }
 
     @include desk {
-      height: 138px;
-      justify-content: center;
-      align-items: center;
+      padding: 47px 54px 39px 59px;
+      min-height: 138px;
     }
 
     &--text-wrap {
-      @media screen and (max-width: 767px) {
-      }
-
-      @include tab {
-        padding-right: 33px;
-      }
-
-      @include desk {
-        padding-right: 35px;
-        padding-left: 28px;
-      }
-
+      display: flex;
+      justify-content: center;
       background: repeating-linear-gradient(
         to top,
-        #e1e1e1 0px,
-        #e1e1e1 1px,
-        transparent 1px,
-        transparent 30px
+        #e1e1e1 8px,
+        #e1e1e1 9px,
+        transparent 9px,
+        transparent 38px
       );
+      @media screen and (min-width: 768px) {
+        background: repeating-linear-gradient(
+          to top,
+          #e1e1e1,
+          #e1e1e1 1px,
+          transparent 1px,
+          transparent 32px
+        );
+      }
     }
 
     &--text {
       position: relative;
       @media screen and (max-width: 767px) {
+        width: 157px;
         font-size: 12px;
-        line-height: 2.5;
+        line-height: 2.55;
       }
       @include tab {
+        width: 460px;
         font-size: 14px;
         line-height: 2.16;
         letter-spacing: 0.04em;
       }
 
       @include desk {
+        width: 750px;
         font-size: 16px;
         line-height: 1.86;
       }

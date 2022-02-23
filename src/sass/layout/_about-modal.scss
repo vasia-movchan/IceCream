@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   z-index: 3;
+  overflow-y: scroll;
 
   background-color: rgba(0, 0, 0, 0.1);
 
@@ -23,7 +24,6 @@
 }
 .about-modal {
   position: absolute;
-  height: 100%;
   border-radius: 4px;
   background-color: var(--sectionBgColor);
   background-image: url(../images/about/about-modal_bg.png);
@@ -31,19 +31,15 @@
   background-size: contain;
   padding: 40px;
   width: 90vw;
-  height: 70vh;
   border-radius: 4px;
   background-color: var(--sectionBgColor);
 
   @media screen and (max-width: 479px) {
-    width: 320px;
-    height: 400px;
-    overflow-y: scroll;
+    max-width: 320px;
   }
   @media screen and (min-width: 480px) {
     overflow-y: scroll;
-    width: 400px;
-    height: 450px;
+    max-width: 400px;
   }
   @media screen and (max-width: 1199px) {
     background-image: url(../images/about/about-milk-mob1x.png);
@@ -62,7 +58,6 @@
 
   @media screen and(min-width:768px) {
     width: 450px;
-    height: 600px;
     padding: 40px;
   }
 
@@ -83,7 +78,6 @@
   @media screen and (min-width: 1200px) {
     overflow: auto;
     width: 528px;
-    height: 581px;
   }
 
   top: 50%;
