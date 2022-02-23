@@ -14,7 +14,7 @@ var food_lines_vis_number = 1;
  var food_amounts = pokupki_block.getElementsByClassName('food-amount');
 var add_button1 = document.getElementById('add-button');
  
-var price_str = new Intl.NumberFormat("uk-US",
+var price_str = new Intl.NumberFormat("us-US",
                         { style: "currency", currency: "USD",
                           minimumFractionDigits: 2 });
 
