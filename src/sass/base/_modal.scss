@@ -36,16 +36,16 @@
 
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  cursor: pointer;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
-  &:hover,
-  &:focus {
-    cursor: pointer;
-    background-color: var(--whiteHover);
-  }
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus .modal-close-btn svg {
+  background-color: var(--whiteHover);
+  fill: var(--accentColor);
 }
 
 .modal-logo {
@@ -61,7 +61,7 @@
   top: 50%;
   left: 50%;
   max-width: 94%;
-  width: 100%;
+  width: 600px;
 
   background-color: var(--mainBackground);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -120,6 +120,7 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     color: var(--accentColor);
+    margin-top: 35px;
   }
 
   &__field {
