@@ -77,6 +77,9 @@
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   transition: transform 250ms var(--cubic), opacity 250ms var(--cubic);
+  @media screen and (max-width: 767px) {
+    padding: 10px;
+  }
 }
 
 .btn-buynow {
@@ -137,7 +140,7 @@
   &__icon {
     position: absolute;
     fill: var(--accentColor);
-    top: 50%;
+    top: 57%;
     left: 12px;
     display: inline-block;
   }
@@ -398,6 +401,9 @@
   justify-content: flex-end;
   padding-top: 20px;
   width: calc(((100% - 60px) * 0.9) + 45px);
+  @media screen and (max-width: 767px) {
+    justify-content: center;
+  }
 }
 
 .total-amount-thumb {
