@@ -145,15 +145,14 @@
 }
 
 .roundBtn {
-  // @extend %centered-flex-box;
   display: flex;
   align-items: center;
   justify-content: center;
   border: none;
   border-radius: 50%;
   padding: 0;
-  width: 18px;
-  height: 18px;
+  width: 26px;
+  height: 26px;
 
   fill: var(--contactRedBtnColor);
   background-color: var(--white);
@@ -187,10 +186,12 @@
   //   }
   // }
 }
+
 .roundBtn__icon {
   width: 8px;
   height: 8px;
 }
+
 .roundBtn:hover,
 .roundBtn:focus {
   background-color: var(--contactRedBtnColor);
